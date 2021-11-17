@@ -1,3 +1,9 @@
+CSS:
+--fonts--:
 font-family: 'Luckiest Guy', cursive;
 font-family: 'Mulish', sans-serif;
 font-family: 'Nunito', sans-serif;
+
+JS:
+//возможность добавлять текст//
+document.body.contentEditable = true
