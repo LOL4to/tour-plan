@@ -373,39 +373,20 @@ template {
   padding: 40px 0;
 }
 
-.header-top__form-search {
+.header-top__search {
   margin-right: auto;
   margin-left: 108px;
 }
 
-.header__header-nav {
-  padding: 31px 0;
+.header-top__logo {
+  width: 177px;
+}
+
+.header__navbar {
   background: #0A223D;
 }
 
-.header-nav__menu {
-  padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header-nav__item {
-  list-style: none;
-}
-
-.header-nav__link {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.form-search {
+.search {
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,7 +396,7 @@ template {
   overflow: hidden;
 }
 
-.form-search__input {
+.search__input {
   width: 350px;
   height: 100%;
   padding-left: 23px;
@@ -427,7 +408,7 @@ template {
   line-height: 15px;
 }
 
-.form-search__button {
+.search__button {
   position: absolute;
   width: 65px;
   height: 100%;
@@ -435,6 +416,7 @@ template {
   right: 0;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -462,5 +444,57 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.navbar__menu {
+  padding-left: 0;
+  padding: 31px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__item {
+  list-style: none;
+  color: #ffffff;
+}
+
+.navbar__link {
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .header__header-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .header-top__search {
+    margin: auto;
+    max-width: 340px;
+  }
+  .navbar__menu {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .navbar__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
