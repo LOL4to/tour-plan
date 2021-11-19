@@ -7,12 +7,12 @@
 @media (max-width: 992px)
   .container
     max-width: 850px
-  .header
-    &__header-top
-      padding-top: 30px
-      padding-bottom: 30px
-  .header-top__search
-    margin-left: 70px
+    width: 95%
+  .header-top
+    padding-top: 33px
+    padding-bottom: 29px
+    &__search
+      margin-left: 70px
   .navbar
       &__menu
         padding-top: 22px
@@ -26,7 +26,12 @@
 @media (max-width: 768px)
   .container
     max-width: 700px
+  .navbar__container
+    max-width: 671px
+    margin-right: 58px
   .header-top
+    padding-top: 38px
+    padding-bottom: 28px
     &__logo
       width: 132px
   .header-top__search
@@ -40,49 +45,46 @@
       background-color: $text-color
   .navbar
     &__menu
-      justify-content: space-around
+      padding-top: 20px
+      padding-bottom: 22px
     &__item_first
       margin-left: 0
 //------------------ End media 768px ------------------//
   ////S
 //------------------ Start media 650px ------------------//
-@media (max-width: 650px)
-  .container
-    max-width: 95%
+@media (max-width: 670px)
   .header-top
-    padding-top: 28px
-    padding-bottom: 28px
     &__logo
-      width: 132px
-    &__search
-      margin-left: 10px
-      margin-right: 30px
-  .search  
-    &__input
-      width: 250px
+      width: 99px
+    &__search, &__user
+      display: none
+    &__menu-button
+      width: 16px
+      height: 11px
+      padding: 0
+      margin-left: auto
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      border: none
+      background-color: #ffffff
+      cursor: pointer
+  .menu-button
+    &__line
+      width: 16px
+      height: 1px
+      background-color: $text-color
   .navbar
     &__menu
-      padding-top: 16px
-      padding-bottom: 16px
-    &__link
-      font-size: 10px
+      display: none
 
 //------------------ End media 650px ------------------//
   ////S
 //------------------ Start media 576px ------------------//
 @media (max-width: 576px)
   .container
-    max-width: 576px
-    width: 92%
-  .header-top
-    &__logo
-      width: 120px
-  .search
-    &__input
-      width: 250px
-  .navbar
-    &__menu
-      justify-content: space-around
+    max-width: 500px
 //------------------ End media 576px ------------------// 
   ////S
 //------------------ Start media 540px ------------------//
@@ -92,28 +94,6 @@
   .header-top
     &__logo
       width: 99px
-    &__search, &__user
-      display: none
-  .search
-  .menu-button
-    width: 16px
-    height: 11px
-    padding: 0
-    margin-left: auto
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: space-between
-    border: none
-    background-color: #ffffff
-    cursor: pointer
-    &__line
-      width: 16px
-      height: 1px
-      background-color: $text-color
-  .navbar
-    &__menu
-      display: none
 //------------------ End media 540px ------------------// 
   ////S
 //------------------ Start media 320px ------------------//
