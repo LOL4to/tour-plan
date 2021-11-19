@@ -1,18 +1,18 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+//------------------ End media 1200px ------------------//
   ////S
+//------------------ Start media 992px ------------------//
 @media (max-width: 992px)
   .container
-    max-width: 700px
+    max-width: 850px
   .header
     &__header-top
       padding-top: 30px
       padding-bottom: 30px
   .header-top__search
-    margin: auto
-  .search__input
-    width: 340px
+    margin-left: 70px
   .navbar
       &__menu
         padding-top: 22px
@@ -20,20 +20,86 @@
       &__link
         font-size: 12px
         line-height: 15px
+//------------------ End media 992px ------------------//
   ////S
+//------------------ Start media 768px ------------------//
 @media (max-width: 768px)
+  .container
+    max-width: 700px
+  .header-top
+    &__logo
+      width: 132px
+  .header-top__search
+    margin-left: 48px
+    margin-right: 70px
+  .search__input
+    width: 340px
+    &__line
+      width: 16px
+      height: 1px
+      background-color: $text-color
+  .navbar
+    &__menu
+      justify-content: space-around
+    &__item_first
+      margin-left: 0
+//------------------ End media 768px ------------------//
+  ////S
+//------------------ Start media 650px ------------------//
+@media (max-width: 650px)
+  .container
+    max-width: 95%
+  .header-top
+    padding-top: 28px
+    padding-bottom: 28px
+    &__logo
+      width: 132px
+    &__search
+      margin-left: 10px
+      margin-right: 30px
+  .search  
+    &__input
+      width: 250px
+  .navbar
+    &__menu
+      padding-top: 16px
+      padding-bottom: 16px
+    &__link
+      font-size: 10px
+
+//------------------ End media 650px ------------------//
+  ////S
+//------------------ Start media 576px ------------------//
+@media (max-width: 576px)
   .container
     max-width: 576px
     width: 92%
   .header-top
     &__logo
-      width: 132px
+      width: 120px
+  .search
+    &__input
+      width: 250px
+  .navbar
+    &__menu
+      justify-content: space-around
+//------------------ End media 576px ------------------// 
+  ////S
+//------------------ Start media 540px ------------------//
+@media (max-width: 540px)
+  .container
+    max-width: 400px
+  .header-top
+    &__logo
+      width: 99px
     &__search, &__user
       display: none
+  .search
   .menu-button
     width: 16px
     height: 11px
     padding: 0
+    margin-left: auto
     display: flex
     flex-direction: column
     align-items: center
@@ -48,10 +114,11 @@
   .navbar
     &__menu
       display: none
+//------------------ End media 540px ------------------// 
   ////S
-@media (max-width: 576px)
-  .header-top
-    &__logo
-      width: 99px
+//------------------ Start media 320px ------------------//
+@media (max-width: 320px)
+  .container
+    max-width: 280px
+//------------------ End media 320px ------------------// 
   ////S
-//@media (max-width: 320px)
