@@ -511,13 +511,9 @@ template {
   .container {
     max-width: 700px;
   }
-  .navbar__container {
-    max-width: 671px;
-    margin-right: 58px;
-  }
   .header-top {
     padding-top: 38px;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
   }
   .header-top__logo {
     width: 132px;
@@ -535,8 +531,7 @@ template {
     background-color: #333333;
   }
   .navbar__menu {
-    padding-top: 20px;
-    padding-bottom: 22px;
+    padding: 19px 23px 23px 5px;
   }
   .navbar__item_first {
     margin-left: 0;
