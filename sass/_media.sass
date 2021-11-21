@@ -1,9 +1,9 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-//------------------ End media 1200px ------------------//
+//------ End media 1200px ------//
   ////S
-//------------------ Start media 992px ------------------//
+//------ Start media 992px ------//
 @media (max-width: 992px)
   .container
     max-width: 850px
@@ -11,7 +11,7 @@
   .header-top
     padding-top: 33px
     padding-bottom: 29px
-    &__search
+  .search
       margin-left: 70px
   .navbar
       &__menu
@@ -20,9 +20,9 @@
       &__link
         font-size: 12px
         line-height: 15px
-//------------------ End media 992px ------------------//
+//------ End media 992px ------//
   ////S
-//------------------ Start media 768px ------------------//
+//------ Start media 768px ------//
 @media (max-width: 768px)
   .container
     max-width: 700px
@@ -31,7 +31,7 @@
     padding-bottom: 30px
     &__logo
       width: 132px
-  .header-top__search
+  .search
     margin-left: 48px
     margin-right: 70px
   .search__input
@@ -42,12 +42,10 @@
       background-color: $text-color
   .navbar
     &__menu
-      padding: 19px 23px 23px 5px
+      padding: 19px 14px 23px 14px
     &__item_first
       margin-left: 0
-//------------------ End media 768px ------------------//
-  ////S
-//------------------ Start media 650px ------------------//
+//------ Start media 650px ------//
 @media (max-width: 670px)
   .header-top
     &__logo
@@ -74,27 +72,74 @@
   .navbar
     &__menu
       display: none
-
-//------------------ End media 650px ------------------//
   ////S
-//------------------ Start media 576px ------------------//
+//------ Start media 576px ------//
 @media (max-width: 576px)
   .container
     max-width: 500px
-//------------------ End media 576px ------------------// 
+//------ End media 576px ------// 
   ////S
-//------------------ Start media 540px ------------------//
+//------ Start media 540px ------//
 @media (max-width: 540px)
   .container
     max-width: 400px
   .header-top
     &__logo
       width: 99px
-//------------------ End media 540px ------------------// 
+//------ End media 540px ------// 
   ////S
-//------------------ Start media 320px ------------------//
+//------ Start media 320px ------//
 @media (max-width: 320px)
   .container
     max-width: 280px
-//------------------ End media 320px ------------------// 
-  ////S
+  .header-top
+    &__menu-button
+      position: absolute
+      right: 0
+      bottom: 35%  
+    padding-top: 40px
+    position: relative
+
+//------------------- Section "hotel" -------------------//
+//------ Start media 768px ------//
+@media (max-width: 768px)
+  .description
+    & span
+      &::after
+        content: ' /'
+    
+//------ Start media 670px ------//
+@media (max-width: 670px)
+    .hotel
+      &__wrapper
+          justify-content: space-between
+      &-row
+        &__info
+          width: 100%
+        &__rating
+          display: none
+    .info
+      &-name
+        flex-basis: 100%
+      &__offer
+        order: -1
+        margin-left: 0
+      &__stars
+        flex-basis: auto
+        ////S
+//------ Start media 320px ------//        
+@media ( max-width: 320px  )
+  .hotel
+    padding-top: 2px
+    padding-bottom: 70px
+    &__info-name
+      margin-top: 9px
+  .info
+    &__stars
+      flex-basis: 23%
+    &__offer
+      margin-top: 2px
+  .description
+    & span
+      &::after
+        content: '/'
