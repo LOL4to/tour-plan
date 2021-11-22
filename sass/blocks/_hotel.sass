@@ -9,6 +9,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    margin-bottom: 20px
     &__rating
       max-width: 65px
       min-height: 45px
@@ -65,3 +66,47 @@
   & span
     &::after
       content: '/'
+.swiper 
+  width: 100%
+  height: 450px
+  position: relative
+  border-radius: 8px
+  &::after
+    content: ''
+    position: absolute
+    z-index: 5
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+  &-slide
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    & img 
+      width: 100%
+      height: 100%
+      object-fit: cover
+.slider
+  width: 728px
+  &-button
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 10
+    position: absolute
+    width: 30px
+    height: 30px
+    border: none
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    background-color: transparent
+    &--next
+      right: 18px
+      background-image: url(../img/slider/arrow-next.svg)
+    &--prev
+      left: 16px
+      background-image: url(../img/slider/arrow-prev.svg)

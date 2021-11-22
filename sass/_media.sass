@@ -4,15 +4,15 @@
 //------ End media 1200px ------//
   ////S
 //------ Start media 992px ------//
-@media (max-width: 992px)
+@media (max-width: 1024px)
   .container
     max-width: 850px
-    width: 95%
-  .header-top
+    width: 92%
+  .header-top 
     padding-top: 33px
     padding-bottom: 29px
   .search
-      margin-left: 70px
+      margin-left: 70px 
   .navbar
       &__menu
         padding-top: 22px
@@ -20,8 +20,18 @@
       &__link
         font-size: 12px
         line-height: 15px
-//------ End media 992px ------//
-  ////S
+//------ Start media 842px ------//
+@media (max-width: 842px)
+  .header-top
+    justify-content: space-between
+    &__search
+      margin-left: 48px
+      margin-right: 70px
+  .search__input
+    width: 340px
+    &__user
+      margin-left: 0
+    
 //------ Start media 768px ------//
 @media (max-width: 768px)
   .container
@@ -31,11 +41,6 @@
     padding-bottom: 30px
     &__logo
       width: 132px
-  .search
-    margin-left: 48px
-    margin-right: 70px
-  .search__input
-    width: 340px
     &__line
       width: 16px
       height: 1px
@@ -43,10 +48,10 @@
   .navbar
     &__menu
       padding: 19px 14px 23px 14px
-    &__item_first
-      margin-left: 0
 //------ Start media 650px ------//
 @media (max-width: 670px)
+  .container
+    max-width: 87%
   .header-top
     &__logo
       width: 99px
@@ -74,23 +79,10 @@
     &__menu
       display: none
   ////S
-//------ Start media 576px ------//
-@media (max-width: 576px)
-  .container
-    max-width: 500px
-//------ End media 576px ------// 
-  ////S
-//------ Start media 540px ------//
-@media (max-width: 540px)
-  .container
-    max-width: 400px
-  .header-top
-    &__logo
-      width: 99px
-//------ End media 540px ------// 
-  ////S
 //------ Start media 320px ------//
 @media (max-width: 320px)
+  .body
+    min-width: 320px
   .header-top
     padding-top: 22px
     padding-bottom: 31px
