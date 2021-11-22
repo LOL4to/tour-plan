@@ -27,7 +27,7 @@
   .container
     max-width: 700px
   .header-top
-    padding-top: 38px
+    padding-top: 30px
     padding-bottom: 30px
     &__logo
       width: 132px
@@ -60,6 +60,7 @@
       display: flex
       flex-direction: column
       align-items: center
+      align-self: flex-end
       justify-content: space-between
       border: none
       background-color: #ffffff
@@ -90,16 +91,11 @@
   ////S
 //------ Start media 320px ------//
 @media (max-width: 320px)
+  .header-top
+    padding-top: 22px
+    padding-bottom: 31px
   .container
     max-width: 280px
-  .header-top
-    &__menu-button
-      position: absolute
-      right: 0
-      bottom: 35%  
-    padding-top: 40px
-    position: relative
-
 //------------------- Section "hotel" -------------------//
 //------ Start media 768px ------//
 @media (max-width: 768px)
@@ -126,6 +122,8 @@
         margin-left: 0
       &__stars
         flex-basis: auto
+    .description
+    margin-bottom: 20px
         ////S
 //------ Start media 320px ------//        
 @media ( max-width: 320px  )
@@ -133,7 +131,7 @@
     padding-top: 2px
     padding-bottom: 70px
     &__info-name
-      margin-top: 9px
+      margin-top: 10px
   .info
     &__stars
       flex-basis: 23%
