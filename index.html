@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="//api-maps.yandex.ru/2.0/?apikey=ваш API-ключ&load=package.standard&lang=ru-RU" type="text/javascript"></script>
     <title>Hotel Booking</title>
 </head>
 
@@ -114,7 +117,7 @@
                 <!-- /.hotel-row__rating -->
             </div>
             <div class="hotel-grid">
-                <div class="slider">
+                <div class="slider hotel__slider">
                     <!-- Slider main container -->
                     <div class="swiper">
                         <!-- Additional required wrapper -->
@@ -176,18 +179,40 @@
                         <button class="button booking__button">View Other Options</button>
                     </div>
                     <!-- /.booking -->
-                    <div class="map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6e46e646cf4500ad02d0f72770d688d11c5f205a1dc31baacf38d5ada6ca2e85&amp;source=constructor" width="347" height="213" frameborder="0"></iframe>
+                    <!-- <div class="map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6e46e646cf4500ad02d0f72770d688d11c5f205a1dc31baacf38d5ada6ca2e85&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                    </div> -->
+                      <div class="api-map">
+                        <div id="YMapsID" style="width: 100%; height: 100%;">
+                        </div>
                     </div>
                     <!-- /.map -->
                 </div>
+                    <!-- /.hotel-column -->
             </div>
             <!-- /.hotel-grid -->
         </div>
         <!-- /.container hotel__container -->
     </section>
+    <div class="newsletter">
+        <div class="newsletter-row">
+            <h2 class="newsletter-title newsletter__title">
+                subscribe to our
+                <span class="newsletter-title__strong">Newsletter</span>
+            </h2>
+            <form action="#" class="subscribe newsletter__subscribe">
+                <input type="text" class="input-subscribe subscribe__input" placeholder="Your email address" />
+                <button class="button-subscribe subscribe__button">
+					Send
+				</button>
+            </form>
+        </div>
+    </div>
+    <!-- /.section "Hotel" -->
     <script src="js/swiper-bundle.min.js"></script>
+    <!-- <script src="js/angular-ymaps.min.js"></script> -->
+    <script type="text/javascript"></script>
     <script src="js/main.js"></script>
 </body>
-
+ 
 </html>

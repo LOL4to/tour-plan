@@ -23,6 +23,7 @@
   &__column
     display: flex
     justify-content: space-between
+    align-items: center
     flex-direction: column
 
 .info
@@ -75,7 +76,7 @@
       content: '/'
 .swiper 
   width: 100%
-  height: 450px
+  height: 100%
   position: relative
   border-radius: 8px
   &::after
@@ -98,6 +99,7 @@
       object-fit: cover
 .slider
   width: 728px
+  height: 450px
   &-button
     top: 50%
     transform: translateY(-50%)
@@ -144,7 +146,7 @@
     font-style: normal
     font-weight: normal
     font-size: 12px
-    line-height: 16px 
+    line-height: 11px 
   &__room
     margin-top: 4px
   &__text
@@ -196,5 +198,16 @@
 .map
   width: 347px
   height: 213px
-  background-color: #127127
-  border-radius: 4px
+  background-color: transparent
+  border-radius: 10px
+  overflow: hidden
+  border-radius: 10px 
+  overflow: hidden
+.api-map
+  width: 347px
+  height: 213px
+  background-color: transparent
+  border-radius: 10px
+  overflow: hidden
+  border-radius: 10px 
+  overflow: hidden

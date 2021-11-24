@@ -133,3 +133,91 @@
     & span
       &::after
         content: '/'
+//------------------- Section "hotel-grid" -------------------//
+        ////S
+@media (max-width: 1200px)
+  .slider
+    width: 590px 
+        ////S
+@media (max-width: 1024px)
+  .hotel
+    &-grid
+      flex-direction: column
+  .slider
+    width: 100%
+  .hotel 
+    &__slider
+      margin-bottom: 30px
+    &__column
+      flex-direction: row
+      justify-content: space-between
+  .booking 
+    width: 47%
+  .api-map
+    width: 47%
+        ////S
+@media (max-width: 768px)
+  .slider
+    height: 450px
+  .booking 
+    width: 48.5%
+  .api-map
+    width: 48.5%
+  .booking
+    padding: 27px 21px 29px 25px
+        ////S
+@media (max-width: 680px)
+  .hotel
+    &__column
+      flex-direction: column
+  .booking
+    width: 95%
+    margin-bottom: 20px
+  .api-map
+    width: 95%
+    height: 245px
+        ////S
+@media (max-width: 540px)
+  .hotel
+    &__slider
+      margin-bottom: 20px
+  .booking
+    width: 100%
+  .api-map
+    width: 100%
+        ////S
+@media (max-width: 320px)
+  .hotel
+    &-row
+      margin-bottom: 38px
+  .slider
+    height: 180px
+    &-button
+      width: 25px
+      height: 25px
+  .booking
+    padding: 28px 23px 26px 24px
+  .api-map
+    max-height: 173px
+        ////S
+//------------------- Section "hotel-grid" -------------------//
+        ////S
+@media (max-width: 992px)
+  .newsletter-row
+    max-width: 700px
+        ////S
+@media (max-width: 680px)
+  .newsletter
+    &-row
+      max-width: 576px
+      width: 92%
+      flex-direction: column
+      align-items: flex-start
+        ////S
+@media (max-width: 480px)
+  .newsletter
+    padding: 76px 0 83px 0
+    &__title
+      margin-bottom: 37px
+    &__subscribe
+      width: 100%
