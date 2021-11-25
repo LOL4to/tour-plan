@@ -571,6 +571,75 @@ template {
           flex-direction: column;
 }
 
+.hotel-slider {
+  width: 728px;
+  height: 450px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.hotel-slider__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.hotel-slider__item::after {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+
+.hotel-slider__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hotel-slider__button {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.hotel-slider__button--next {
+  right: 18px;
+  background-image: url(../img/slider/arrow-next.svg);
+}
+
+.hotel-slider__button--prev {
+  left: 16px;
+  background-image: url(../img/slider/arrow-prev.svg);
+}
+
 .info-name {
   font-size: 24px;
   line-height: 30px;
@@ -641,76 +710,6 @@ template {
 
 .description span::after {
   content: '/';
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 8px;
-}
-
-.swiper::after {
-  content: '';
-  position: absolute;
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-}
-
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.slider {
-  width: 728px;
-  height: 450px;
-}
-
-.slider-button {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 10;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: none;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
-  background-color: transparent;
-}
-
-.slider-button--next {
-  right: 18px;
-  background-image: url(../img/slider/arrow-next.svg);
-}
-
-.slider-button--prev {
-  left: 16px;
-  background-image: url(../img/slider/arrow-prev.svg);
 }
 
 .booking {
@@ -918,7 +917,7 @@ template {
 
 .subscribe {
   position: relative;
-  width: 355px;
+  width: 350px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
@@ -947,6 +946,84 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+}
+
+.reviews {
+  padding: 40px 0;
+}
+
+.reviews__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.reviews-slider {
+  width: 730px;
+}
+
+.reviews-slider__button {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.reviews-slider__button--next {
+  right: 18px;
+  background-image: url(../img/slider/arrow-next.svg);
+}
+
+.reviews-slider__button--prev {
+  left: 16px;
+  background-image: url(../img/slider/arrow-prev.svg);
+}
+
+.reviews-slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-top: 45px;
+}
+
+.reviews-slider__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-display: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -45px;
+}
+
+.reviews-slider__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -1129,7 +1206,7 @@ template {
 }
 
 @media (max-width: 1200px) {
-  .slider {
+  .hotel-slider {
     width: 590px;
   }
 }
@@ -1141,8 +1218,9 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .slider {
+  .hotel-slider {
     width: 100%;
+    height: calc(59vw);
   }
   .hotel__slider {
     margin-bottom: 30px;
@@ -1165,7 +1243,7 @@ template {
 }
 
 @media (max-width: 768px) {
-  .slider {
+  .hotel-slider {
     height: 450px;
   }
   .booking {
@@ -1187,12 +1265,18 @@ template {
             flex-direction: column;
   }
   .booking {
-    width: 95%;
+    width: 100%;
     margin-bottom: 20px;
   }
   .api-map {
-    width: 95%;
+    width: 100%;
     height: 245px;
+  }
+}
+
+@media (max-width: 660px) {
+  .hotel-slider {
+    height: calc(60vw);
   }
 }
 
@@ -1212,10 +1296,10 @@ template {
   .hotel-row {
     margin-bottom: 38px;
   }
-  .slider {
+  .hotel-slider {
     height: 180px;
   }
-  .slider-button {
+  .hotel-button {
     width: 25px;
     height: 25px;
   }

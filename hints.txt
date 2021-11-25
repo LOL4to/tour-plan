@@ -7,3 +7,41 @@ font-family: 'Nunito', sans-serif;
 JS:
 //возможность добавлять текст//
 document.body.contentEditable = true
+
+
+
+ymaps.ready(init);
+
+function init() {
+    // Создание карты.
+    // https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/map-docpage/
+    var myMap = new ymaps.Map("YMapsID", {
+        // Координаты центра карты.
+        // Порядок по умолчнию: «широта, долгота».
+        center: [37.777339, -122.414567],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 12,
+        // Элементы управления
+        // https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/controls/standard-docpage/
+        controls: [
+
+            'zoomControl', // Ползунок масштаба
+            'rulerControl', // Линейка
+            'routeButtonControl', // Панель маршрутизации
+            'trafficControl', // Пробки
+            'typeSelector', // Переключатель слоев карты
+            'fullscreenControl', // Полноэкранный режим
+
+            // Поисковая строка
+            new ymaps.control.SearchControl({
+                options: {
+                    // вид - поисковая строка
+                    size: 'large',
+                    // Включим возможность искать не только топонимы, но и организации.
+                    provider: 'yandex#search'
+                }
+            })
+
+        ]
+    });
