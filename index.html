@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <script src="//api-maps.yandex.ru/2.0/?apikey=ваш API-ключ&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <!-- <script src="//api-maps.yandex.ru/2.0/?apikey=ваш API-ключ&load=package.standard&lang=en-EN"></script> -->
     <title>Hotel Booking</title>
 </head>
 
@@ -179,7 +179,8 @@
                         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6e46e646cf4500ad02d0f72770d688d11c5f205a1dc31baacf38d5ada6ca2e85&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
                     </div> -->
                     <div class="api-map">
-                        <div id="YMapsID" style="width: 100%; height: 100%"></div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15894.485701823605!2d-122.4316977239457!3d37.76975887763537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2z0KHQsNC9LdCk0YDQsNC90YbQuNGB0LrQviwg0JrQsNC70LjRhNC-0YDQvdC40Y8sINCh0KjQkA!5e0!3m2!1sru!2sru!4v1637854947701!5m2!1sru!2sru"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <!-- /.map -->
                 </div>
@@ -191,15 +192,19 @@
     </section>
     <!-- /.section "Hotel" -->
     <section class="newsletter">
-        <div class="newsletter-row">
-            <h2 class="newsletter-title newsletter__title">
-                subscribe to our
-                <span class="newsletter-title__strong">Newsletter</span>
-            </h2>
-            <form action="#" class="subscribe newsletter__subscribe">
-                <input type="text" class="input-subscribe subscribe__input" placeholder="Your email address" />
-                <button class="button-subscribe subscribe__button">Send</button>
-            </form>
+        <div class="container">
+            <div class="newsletter-row">
+                <h2 class="newsletter-title newsletter__title">
+                    subscribe to our
+                    <span class="newsletter-title__strong">Newsletter</span>
+                </h2>
+                <form action="#" class="subscribe newsletter__subscribe">
+                    <input type="text" class="input-subscribe subscribe__input" placeholder="Your email address" />
+                    <button class="button-subscribe subscribe__button">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="newsletter-parallax">
         </div>
     </section>
     <section class="reviews">
@@ -207,37 +212,135 @@
             <h2 class="reviews__title">What people think about us</h2>
             <div class="swiper reviews-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide reviews-slider__item">
-                        <div class="reviews-slider__profile">
-                            <img src="img/reviews/reviews-avatar.jpg" alt="Megan Fox" class="reviews-slider__avatar" />
-                            <h3 class="reviews-slider__username">Megan Fox</h3>
-                            <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
-                            <div class="reviews-slider__rating">
-                                <img src="img/Star.svg" alt="star" />
-                                <img src="img/Star.svg" alt="star" />
-                                <img src="img/Star.svg" alt="star" />
-                                <img src="img/Star.svg" alt="star" />
-                                <img src="img/Star.svg" alt="star" />
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <div class="reviews-slider__avatar"><img src="img/reviews/reviews-avatar.jpg" alt="Megan Fox" class="reviews-slider__icon" /></div>
+                                <h3 class="reviews-slider__username">Megan Fox</h3>
+                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                </div>
                             </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad
+                                feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it
+                                was a good experience and could recommend.
+                            </p>
                         </div>
-                        <!-- /.reviews-slider__profile -->
-                        <p class="reviews-slider__text">
-                            It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad
-                            feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was
-                            a good experience and could recommend.
-                        </p>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+
+                            <div class="reviews-slider__profile">
+                                <div class="reviews-slider__avatar"><img src="img/reviews/statham-avatar.jpg" alt="Jason Statham" class="reviews-slider__icon" /></div>
+                                <h3 class="reviews-slider__username">Jason Statham</h3>
+                                <span class="reviews-slider__date">Stayed 29 Feb, 2017</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                </div>
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                Своих братьев береги, шкуру люби, маму храни, врагов хорони, суп посоли, ковер отряхни, Мухаммед Али. Живи,кайфуй,гуляй,играй, упал - вставай,наглей,ругай,чужих роняй,своих спасай,пельмени,суп,картошка чай. "Брат, бей первым. и неважно, кто есть кто,
+                                кто был кем и ким чен ын. бог рассудит каждого из тех, кто был никто, а некто, кем ты был, не будет быть, но будет ждать. ты сам себе бог. сам себе брат. сам себе сам. сам себе режиссёр скачать все сезоны бесплатно. главное,
+                                помнить — освежители воздуха с ароматом сирени лучше аромата океанского бриза... "
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <div class="reviews-slider__avatar"><img src="img/reviews/stallone-avatar.jpg" alt="Sylvester Stallone" class="reviews-slider__icon" /></div>
+                                <h3 class="reviews-slider__username">Sylvester Stallone</h3>
+                                <span class="reviews-slider__date">Stayed 07 Dec, 2006</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                </div>
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                Я скажу то, что для тебя не новость. Мир не такой уж солнечный и приветливый. Это очень опасное, жесткое место. И если только дашь слабину, он опрокинет с такой силой тебя, что больше уже не встанешь. Ни ты, ни я, никто на свете не бьет так сильно, как
+                                ЖИЗНЬ. Совсем не важно, как ты ударишь, а важно, КАКОЙ ДЕРЖИШЬ УДАР, как двигаешься вперед. Будешь идти – ИДИ, если с испугу не свернешь. Только так побеждают! Если знаешь, чего ты стоишь, иди и бери свое, но будь готов
+                                удары держать, а не плакаться и говорить: «Я ничего не добился из-за него, из-за нее, из-за кого-то»! Так делают трусы, а ты не трус! Быть этого не может! …я всегда буду тебя любить, что бы ни случилось. Ты мой сын – плоть
+                                от плоти, самое дорогое, что у меня есть. Но пока ты не поверишь в себя, жизни не будет..."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <div class="reviews-slider__avatar"><img src="img/reviews/king-avatar.jpg" alt="Stephen King" class="reviews-slider__icon" /></div>
+                                <h3 class="reviews-slider__username">Stephen Edwin King</h3>
+                                <span class="reviews-slider__date">Stayed 21 Sen, 1995</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                </div>
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                Я потратил много лет, думаю, даже слишком, стыдясь своих текстов. Мне было уже около сорока, когда я понял, что почти любого писателя или поэта, который в своей жизни опубликовал хоть строчку, критиковали за то, что он растрачивает свой талант. Если ты
+                                пишешь (или, например, рисуешь, или танцуешь, или создаешь скульптуры, или поешь), это всегда будет заставлять тебя чувствовать себя неудачником. Это неизбежно.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <div class="reviews-slider__avatar"><img src="img/reviews/einstein-avatar.jpg" alt="Albert Einstein" class="reviews-slider__icon" /></div>
+                                <h3 class="reviews-slider__username">Albert Einstein</h3>
+                                <span class="reviews-slider__date">Stayed 05 Oct, 1903</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                    <img src="img/Star.svg" alt="star" />
+                                </div>
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">Благодаря тому, что сегодня теория относительности удовлетворяет вкусам читателей, в Германии меня называют немецким учёным, а для Англии я являюсь швейцарским евреем. Если же дойдёт до моего очернения, то характеристики поменяются
+                                местами, и для Германии я стану швейцарским евреем, а для Англии — немецким учёным. Если прямой путь закрыт, вместо того чтобы опускать руки, вспомни, что способ — не главное. Другие пути тоже могут привести к цели. Особенно
+                                если к упорству добавить приличную дозу здорового юмора и способность смотреть шире и думать творчески.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <!-- /.reviews-slide -->
-                <div class="reviews-slider__button--prev"></div>
-                <div class="reviews-slider__button--next"></div>
+                <!-- /.swiper-wripper -->
+                <button class="reviews-slider__button reviews-slider__button--prev"></button>
+                <button class="reviews-slider__button reviews-slider__button--next"></button>
             </div>
             <!-- /.reviews-slider -->
         </div>
         <!-- /.container -->
     </section>
     <script src="js/swiper-bundle.min.js"></script>
-    <!-- <script src="js/angular-ymaps.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

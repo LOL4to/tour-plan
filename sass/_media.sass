@@ -88,7 +88,7 @@
     padding-bottom: 31px
   .container
     max-width: 280px
-//------------------- Section "hotel" -------------------//
+//-------------- Section "hotel" --------------//
 //------ Start media 768px ------//
 @media (max-width: 768px)
   .description
@@ -133,7 +133,7 @@
     & span
       &::after
         content: '/'
-//------------------- Section "hotel-grid" -------------------//
+//-------------- Section "hotel-grid" --------------//
         ////S
 @media (max-width: 1200px)
   .hotel
@@ -159,6 +159,7 @@
         ////S
 @media (max-width: 768px)
   .hotel
+    padding-bottom: 58px
     &-slider
       height: 450px
   .booking 
@@ -182,23 +183,19 @@
 @media (max-width: 660px)
   .hotel
     &-slider
-      height: calc(60vw)
+      height: calc(55vw)
+      min-height: 180px
         ////S
 @media (max-width: 540px) 
   .hotel
     &__slider
       margin-bottom: 20px
-  .booking
-    width: 100%
-  .api-map
-    width: 100%
         ////S
 @media (max-width: 320px)
   .hotel
+    padding-bottom: 40px
     &-row
       margin-bottom: 38px
-    &-slider
-      height: 180px
     &-button
       width: 25px
       height: 25px
@@ -207,24 +204,108 @@
   .api-map
     max-height: 173px
         ////S
-//------------------- Section "hotel-grid" -------------------//
+//-------------- Section "newsletter" --------------//
         ////S
 @media (max-width: 992px)
   .newsletter-row
     max-width: 700px
         ////S
+@media (max-width: 768px)
+  .newsletter
+    padding: 92px 0 92px 0
+        ////S
 @media (max-width: 680px)
   .newsletter
+    padding: 76px 0 83px 0
     &-row
       max-width: 576px
       width: 92%
       flex-direction: column
       align-items: flex-start
+      margin: 0
+    &__subscribe
+      min-width: 280px
+      width: 100%
+    &-title
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        margin-top: 4px
+        font-size: 30px
+        line-height: 38px
+    &__title
+      margin-bottom: 37px
+
         ////S
 @media (max-width: 480px)
   .newsletter
-    padding: 76px 0 83px 0
-    &__title
-      margin-bottom: 37px
+    &-row
+      width: 88%
+    &__input
+      padding-left: 20px
     &__subscribe
       width: 100%
+      margin-left: 0
+        ////S
+//-------------- Section "reviews" --------------//
+        ////S
+@media (max-width: 992px)
+  .reviews
+    margin-bottom: 60px
+    &-slider
+      &__item
+        max-width: 580px
+        ////S
+@media (max-width: 768px)
+  .reviews
+    &__title
+      font-size: 30px
+      line-height: 37px
+      margin-bottom: 50px
+    &-slider
+      &__item
+        max-width: 580px
+        padding: 0 60px 30px 64px
+        &:after, &:before
+          display: none
+      &__button
+        top: 41%
+        &--prev
+          left: 0
+        &--next
+          right: 0
+        ////S
+@media (max-width: 680px)
+  .reviews
+    &__title
+      max-width: 260px
+      margin-bottom: 42px
+      line-height: 23px
+      font-size: 18px
+    &-slider
+      &__item
+        padding: 0 29px 30px 32px
+      &__button
+        top: 32px
+        &--prev
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: -105px
+        &--next
+          right: 50%
+          transform: translate(50%, 0)
+          margin-right: -105px
+    &__slider
+      margin-bottom: 20px
+        ////S
+@media (max-width: 480px)
+  .reviews
+    margin-bottom: 50px
+    &-slider
+      &__item
+        padding: 0 32px 30px 30px
+      &__button
+        &--prev
+          left: 55%
+        &--next
+          right: 55%

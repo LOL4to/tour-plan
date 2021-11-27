@@ -30,9 +30,9 @@
     height: 450px
     transition-duration: .5s
     &__item
+      position: relative
       width: 100%
       height: 100%
-      position: relative
       border-radius: 8px
       display: flex
       justify-content: center
@@ -52,18 +52,7 @@
         height: 100%
         object-fit: cover
     &__button
-      top: 50%
-      transform: translateY(-50%)
-      z-index: 10
-      position: absolute
-      width: 30px
-      height: 30px
-      border: none
-      cursor: pointer
-      background-repeat: no-repeat
-      background-position: center
-      background-size: 10px
-      background-color: transparent
+      +slider-button
       &--next
         right: 18px
         background-image: url(../img/slider/arrow-next.svg)
@@ -119,6 +108,8 @@
   & span
     &::after
       content: '/'
+.swiper
+  margin-left: 0
 .booking
   font-family: 'Nunito', sans-serif
   width: 350px
