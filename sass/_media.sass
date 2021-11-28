@@ -330,20 +330,18 @@
     padding-bottom: 70px
     &-wrapper
       flex-wrap: wrap
-      justify-content: space-evenly
+      margin: -10px
     &__card
-      margin-bottom: 20px
+      margin: 10px
   .card
-    width: 340px
-    height: 255px
+    width: calc(50% - 20px)
+    min-height: 255px
         ////S
 @media (max-width: 768px)
   .activities
     padding-bottom: 70px
     &-wrapper
-      justify-content: space-between
   .card 
-    width: 48.5%
     &__title
       width: 205px
         ////S
@@ -358,7 +356,6 @@
   .card 
     width: 100%
     height: calc(50vw)
-    min-height: 255px
     &__title
       width: 90%
     &:nth-child(1)
@@ -370,5 +367,9 @@
       margin-bottom: 28px
     &:nth-child(4)
       order: 4
+        ////S
+@media (max-width: 260px)
+  .card 
+    min-height: calc(50vw)
       
 
