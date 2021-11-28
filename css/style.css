@@ -1728,7 +1728,7 @@ template {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
   }
   .card:nth-child(4) {
     -webkit-box-ordinal-group: 5;
