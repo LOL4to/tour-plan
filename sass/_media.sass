@@ -371,5 +371,91 @@
 @media (max-width: 260px)
   .card 
     min-height: calc(50vw)
-      
-
+//-------------- Section "packages" --------------//
+        ////S
+@media (max-width: 1024px)
+  .packages
+    &-list
+      grid-auto-flow: column
+      grid-template-columns: repeat(2, 1fr)
+      &__item
+      &__info
+        margin-bottom: 0
+      &__subtext
+        margin-bottom: 0
+      &__text
+        &:last-child
+          margin-bottom: 0
+      &__button
+        padding: 10px 15px
+      &__block
+        &--first
+          grid-template-rows: repeat(4, 0fr)
+          grid-row-gap: 1.5em
+        ////S
+@media (max-width: 680px)
+  .packages
+    &-list
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(5, 250px)
+      grid-gap: 15px 0
+      &__item
+        height: 100%
+        grid-template-columns: 1fr 1fr
+        grid-column: 1/span 2
+        grid-template-rows: 1fr
+        &--first
+          grid-template-rows: 100%
+      &__block
+        padding: 31px 15px 15px 15px
+        &--first
+          padding: 16px 15px 15px 15px
+          grid-template-rows: repeat(3, 1fr)
+          grid-row-gap: 1.0em
+      &__text
+        margin-bottom: 5px
+      &__subtext
+        display: none
+      &__description
+        font-size: 11px
+      &__offer
+        &--first
+          padding: 4px 9px
+      &__button
+        padding: 5px 9px
+        ////S
+@media (max-width: 550px)
+  .packages
+    &-list
+      &__item
+        position: relative
+        z-index: -1
+        height: 100%
+        color: #ff0000
+        grid-template-rows: 100%
+        grid-template-columns: 1fr
+        &::after
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          z-index: -1
+          background: linear-gradient(0deg, rgba(28, 125, 149, 0.1) 50%, #0A223D 90%)
+      &__block
+        position: absolute
+        bottom: 0%
+        &--first
+          grid-row-gap: 0.2em
+      &__img
+        position: absolute
+        z-index: -1
+      &__offer
+        top: 10%
+        &-first
+          padding: 4px 9px
+          font-style: normal
+          font-weight: 600
+          font-size: 8px
+          line-height: 10px
