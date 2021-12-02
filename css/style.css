@@ -1704,7 +1704,7 @@ template {
   list-style: none;
 }
 
-.footer a {
+.footer__more--links {
   color: #ffffff;
   font-style: normal;
   font-weight: normal;
@@ -1765,6 +1765,13 @@ template {
   .header-top {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .header-top--mobile--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
   }
   .header-top__logo {
     width: 132px;
