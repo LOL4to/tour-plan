@@ -1704,7 +1704,7 @@ template {
   list-style: none;
 }
 
-.footer__more--a {
+.footer a {
   color: #ffffff;
   font-style: normal;
   font-weight: normal;
