@@ -71,9 +71,23 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 // ------------------------------- Параллакс на jquery
 $('.newsletter-parallax').parallax({
     imageSrc: 'img/newsletter/newsletter-bg.jpeg',
-    speed: 0.3,
+    speed: 0.2,
 });
 
+var menuButton = document.querySelector(".header-top__menu-button");
+menuButton.addEventListener('click', function() {
+    console.log('Клик по кнопке меню');
+    document.querySelector(".header__navbar").classList.toggle("header__navbar--visible");
+    document.querySelector("body").classList.toggle("body--visible");
+
+});
+// var navbarVisible = document.getElementsByClassName("header__navbar--visible");
+
+// if ('navbarVisible') {
+//     document.body.style.overflow = 'hidden';
+// else
+//     document.body.style.overflow = 'visible';
+// };
 /**/
 // ------------------------------- Тут пытался параллакс с JS, сначала движение мышкой  -------------------------------
 // window.onload = function() {

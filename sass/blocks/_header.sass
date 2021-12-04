@@ -44,6 +44,7 @@
     border: none
     background-color: $primary
     cursor: pointer
+    +hover-button
 .user
   &__avatar
     width: 40px
@@ -75,3 +76,12 @@
     text-decoration: none
     font-size: 14px
     line-height: 18px
+  &-menu
+    &__item
+      &--visible
+        display: none
+.header
+  &-top
+    &__user, &__search
+      &--visible
+        display: none

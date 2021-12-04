@@ -36,34 +36,63 @@
 @media (max-width: 768px)
   .container
     max-width: 700px
-  .header-top
-    padding-top: 30px
-    padding-bottom: 30px
-    &--mobile
-      &--fixed
-        position: fixed
-        top: 0
-        left: 0
-        right: 0 
-        z-index: 99
-    &__logo
-      width: 132px
-    &__line
-      width: 16px
-      height: 1px
-      background-color: $text-color
+  .header
+    &-top
+      padding-top: 30px
+      padding-bottom: 30px
+      &__logo
+        width: 132px
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
   .navbar
     &__menu
       padding: 19px 14px 23px 14px
 //------ Start media 650px ------//
 @media (max-width: 670px)
+  body
+    padding-top: 70px
+  .body
+    &--visible
+      padding-right: 16px
+      overflow: hidden
+      position: fixed
   .container
     max-width: 87%
+  .header
+    &--mobile
+      &--fixed
+        // position: fixed
+        top: 0
+        left: 0
+        right: 0 
+        z-index: 99
+    &__navbar
+      padding-top: 8px
+      display: none
+      // position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 71px
+      &--visible
+        display: block
   .header-top
     &__logo
       width: 99px
     &__search, &__user
-      display: none
+      &--hidden
+        display: none
+      &--visible
+        display: flex
+        margin-bottom: 10px
+    &__search
+      &--visible
+        margin-bottom: 15px
+    &__user
+      flex-direction: column
+      justify-content: center
     &__menu-button
       width: 16px
       height: 11px
@@ -84,8 +113,30 @@
       background-color: $text-color
   .navbar
     &__menu
-      display: none
+      padding: 23px 8px 12px 8px
+      flex-direction: column
+      align-items: center
+      &--visible
+    &__item
+      margin-bottom: 17px
+    &-menu
+      &__item
+        &--visible
+          display: block
+  .user
+    &__user-name
+      &--light
+        margin-top: 10px
+        margin-left: 0
+        color: #ffffff
   ////S
+@media (max-width: 420px)
+  .search
+    margin: 0 0 19px 0
+    &__input
+      width: 99%
+      padding-right: 80px
+
 //------ Start media 320px ------//
 @media (max-width: 320px)
   .body
@@ -468,8 +519,8 @@
           font-size: 8px
           line-height: 10px
         ////S
-//-------------- Section "packages" --------------//
-
+//-------------- Section "footer" --------------//
+        ////S
 @media (max-width: 1200px)
   .footer
     &__input
@@ -496,8 +547,8 @@
         align-self: center
         justify-self: center
     &__title
-      margin-top: 5px
-      margin-bottom: 17px
+      margin-top: 7px
+      margin-bottom: 18px
       &--inline
         margin: 0 42px 0 0
       &--mb-3
@@ -508,7 +559,7 @@
         margin-top: 0px
         margin-bottom: 34px
     &__categories
-      margin-top: 3px
+      margin-top: 0
       margin-bottom: 19px
       grid-row: 2/3
       grid-column: span 2
@@ -537,7 +588,55 @@
     &__bottom
       margin-top: 0
         ////S
-@media (max-width: 670px)
+@media (max-width: 760px)
+  .footer
+    padding: 69px 0 21px 0
+    &-wrapper
+      grid-template-columns: repeat(2, minmax(min-content,1fr))
+      grid-auto-rows: min-content
+      grid-gap: 20px 5px
+    &__title 
+      font-size: 16px
+      margin: 0
+      &--inline
+        margin: 0 0 10px 0
+    &__logo
+      grid-row: 1
+      grid-column: 1
+      align-self: start
+    &__social
+      &-network
+        grid-row: 1 span 2
+        grid-column: 1
+        align-self: self-end
+        justify-self: stretch
+        flex-direction: column
+        margin: 0
+      &-links
+        width: 105px
+    &__categories
+      grid-row: 1
+      grid-column: 2/3
+    &__legal
+      grid-row: 2
+      grid-column: 1
+      margin-bottom: 0
+    &__additional
+      grid-row: 2
+      grid-column: 2/3
+    &__contact
+      &-details
+        margin-left: -1px
+        grid-column: span 2
+        grid-row: 3
+      &-form
+        grid-row: 4
+        grid-column: span 2
+    &-bottom
+      grid-column: 1/3
+      grid-row: 5
+        ////S
+@media (max-width: 550px)
   .footer
     padding: 69px 0 21px 0
     &-wrapper
@@ -612,6 +711,8 @@
         ////S
 @media (max-width: 510px)
   .footer
+    &__title
+      font-size: 18px
     &__info
       width: 100%
       margin-bottom: 15px

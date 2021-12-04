@@ -7,5 +7,19 @@ body
 .container
   max-width: 1110px
   margin: auto
+a
+  text-decoration: none
+  &:hover
+    color: rgba($primary, 0.3)
+input
+  outline: none
+button
+  border: none
+  cursor: pointer
+        ////S
+@media (min-width: 992px)
+  button
+    +hover-button
   a
-    text-decoration: none
+    &:hover
+      transform: scale(1.1)

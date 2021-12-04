@@ -17,19 +17,19 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header--mobile--fixed">
         <div class="container header__container">
-            <div class="header-top header__header-top header-top--mobile--fixed">
+            <div class="header-top header__header-top">
                 <a href="#" class="logo header-top__logo">
                     <img src="img/header-top/head-logo.svg" alt="Tour-logo" class="logo__img" />
                 </a>
-                <form action="#" class="search header-top__search">
+                <form action="#" class="search header-top__search header-top__search--hidden">
                     <input type="text" class="input-search search__input" placeholder="Search Location" />
                     <button class="button-search search__button">
 							<img src="img/header-top/head-search.svg" alt="Header search" />
 						</button>
                 </form>
-                <a href="#" class="user header-top__user">
+                <a href="#" class="user header-top__user header-top__user--hidden">
                     <img src="img/header-top/head-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
                     <span class="user-name user__user-name">Nathan</span>
                 </a>
@@ -45,6 +45,20 @@
         <nav class="navbar header__navbar">
             <div class="container navbar__container">
                 <ul class="navbar__menu">
+                    <li class="navbar__item navbar-menu__item--visible">
+                        <a href="#" class="user header-top__user header-top__user--visible">
+                            <img src="img/header-top/head-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+                            <span class="user-name user__user-name user__user-name--light">Nathan</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item navbar-menu__item--visible">
+                        <form action="#" class="search header-top__search header-top__search--visible">
+                            <input type="text" class="input-search search__input" placeholder="Search Location" />
+                            <button class="button-search search__button">
+							<img src="img/header-top/head-search.svg" alt="Header search" />
+						</button>
+                        </form>
+                    </li>
                     <li class="navbar__item">
                         <a href="#" class="navbar__link">All Deals</a>
                     </li>
@@ -540,8 +554,7 @@ quest" class="card__image">
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title footer__title--categ-mb">ALL CATEGORIES</h3>
                     <ul class="footer__ul">
-                        <li class="footer__item"><a href="#" class="footer__link">All Deals
-                        </a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Activities</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Spa Packages</a></li>
@@ -567,9 +580,9 @@ quest" class="card__image">
                 <div class="footer__social-network">
                     <h3 class="footer__title footer__title--inline">Social Network</h3>
                     <div class="footer__social-links">
-                        <a href="#" class="footer__link"><img src="img/footer/fb.svg" alt="Icon: facebook"></a>
-                        <a href="#" class="footer__link"><img src="img/footer/yt.svg" alt="Icon: youtube"></a>
-                        <a href="#" class="footer__link"><img src="img/footer/inst.svg" alt="Icon: inst"></a>
+                        <a href="https://www.facebook.com" class="footer__link" target="_blank"><img src="img/footer/fb.svg" alt="Icon: facebook"></a>
+                        <a href="https://www.youtube.com/" class="footer__link" target="_blank"><img src="img/footer/yt.svg" alt="Icon: youtube"></a>
+                        <a href="https://www.instagram.com" class="footer__link" target="_blank"><img src="img/footer/inst.svg" alt="Icon: inst"></a>
                     </div>
                 </div>
                 <!-- ./social-network -->
@@ -604,13 +617,16 @@ quest" class="card__image">
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="img/footer/phone.svg" alt="Icon: phone">
-                            </div> Tel (business hours) : 269 1500<br> Tel (hotline) Monday - Saturday: <wbr>52-56-61-38 (08:00 am – 20:00 pm)<br>Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                            </div>
+                            <div class="footer__text-block"><span class="footer__subtext">Tel (business hours) : <a href="#" class="footer__number">269 1500</a></span>
+                                <span class="footer__subtext">Tel (hotline) Monday - Saturday: <wbr><a href="#" class="footer__number"><nobr>52-56-61-38</nobr></a>  <nobr>(08:00 am – 20:00 pm)</nobr></span>
+                                <span class="footer__subtext">Tel (hotline) Sunday: <a href="#" class="footer__number"><nobr>52-56-61-38</nobr></a> <nobr>(08:00 am – 14:00 pm)</nobr></span></div>
 
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="img/footer/mail.svg" alt="Icon: mail">
-                            </div> cherly.lawson@example.com
+                            </div> <a href="#" class="footer__mail">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
@@ -636,7 +652,7 @@ quest" class="card__image">
                             <li><a class="footer__more--links" href="#">Cancellation policy</a>
                             </li>
                         </ul>
-                        <img class="footer__pay" src="img/footer/pay.png" alt="Icons: pay">
+                        <a href="#" class="footer__pay"><img src="img/footer/pay.png" alt="Icons: pay"></a>
                     </div>
                 </div>
             </div>
