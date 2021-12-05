@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- <script src="//api-maps.yandex.ru/2.0/?apikey=ваш API-ключ&load=package.standard&lang=en-EN"></script> -->
+    <title>Hotel Booking</title>
+</head>
+<style>
+    .info__description {
+        font-size: 22px;
+        color: inherit;
+    }
+</style>
+
+<body>
+    <header class="header header--mobile--fixed">
+        <div class="container header__container">
+            <div class="header-top header__header-top">
+                <a href="#" class="logo header-top__logo">
+                    <img src="img/header-top/head-logo.svg" alt="Tour-logo" class="logo__img" />
+                </a>
+                <form action="#" class="search header-top__search header-top__search--hidden">
+                    <input type="text" class="input-search search__input" placeholder="Search Location" />
+                    <button class="button-search search__button">
+							<img src="img/header-top/head-search.svg" alt="Header search" />
+						</button>
+                </form>
+                <a href="#" class="user header-top__user header-top__user--hidden">
+                    <img src="img/header-top/head-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+                    <span class="user-name user__user-name">Nathan</span>
+                </a>
+                <button class="menu-button header-top__menu-button">
+						<span class="menu-button__line"></span>
+						<span class="menu-button__line"></span>
+						<span class="menu-button__line"></span>
+					</button>
+            </div>
+            <!-- /.header-top -->
+        </div>
+        <!-- /.container -->
+        <nav class="navbar header__navbar">
+            <div class="container navbar__container">
+                <ul class="navbar__menu">
+                    <li class="navbar__item navbar-menu__item--visible">
+                        <a href="#" class="user header-top__user header-top__user--visible">
+                            <img src="img/header-top/head-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+                            <span class="user-name user__user-name user__user-name--light">Nathan</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item navbar-menu__item--visible">
+                        <form action="#" class="search header-top__search header-top__search--visible">
+                            <input type="text" class="input-search search__input" placeholder="Search Location" />
+                            <button class="button-search search__button">
+							<img src="img/header-top/head-search.svg" alt="Header search" />
+						</button>
+                        </form>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">All Deals</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Hotels</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Activities</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Hotel Day Packages</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Restaurants</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Events</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Rodrigues</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /.navbar -->
+    </header>
+    <nav class="breadcrumb">
+        <div class="container breadcrumb__container">
+            <ul class="breadcrumb-list breadcrumb__breadcrumb-list">
+                <li class="breadcrumb-item breadcrumb-list__item">
+                    <a href="" class="breadcrumb-list__link">Home</a>
+                </li>
+                <li class="breadcrumb-item breadcrumb-list__item">
+                    <a href="" class="breadcrumb-list__link">Flash Offers</a>
+                </li>
+                <li class="breadcrumb-item breadcrumb-list__item">
+                    Grand Hilton Hotel
+                </li>
+            </ul>
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- /.breadcrumb -->
+    <section class="hotel">
+        <div class="container hotel__container">
+            <div class="hotel-row hotel__hotel-row">
+                <div class="info hotel-row__info">
+                    <div class="hotel__wrapper">
+                        <strong class="description info__description">
+                            Спасибо за обращение! 
+                            <br>
+                            <br>
+                            <br>
+                            Ожидайте звонка, скоро наш сотрудник свяжется с вами. </strong>
+                    </div>
+                    <!-- /.hotel-row__info -->
+                </div>
+            </div>
+        </div>
+        <!-- /.container hotel__container -->
+    </section>
+    <!-- /.section "Hotel" -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="#" class="logo footer__logo"><img src="img/footer/vert-logo.svg" class="logo footer__logo--image" alt="Logo: Tour Plan-vert"></a>
+                <div class="footer__list footer__categories">
+                    <h3 class="footer__title footer__title--categ-mb">ALL CATEGORIES</h3>
+                    <ul class="footer__ul">
+                        <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Activities</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Spa Packages</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Hotel Day Packages</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Restaurants</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Fitness</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Rodrigues</a></li>
+                    </ul>
+                </div>
+                <!-- ./footer__list -->
+                <div class="footer__list footer__additional">
+                    <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+                    <ul class="footer__ul">
+                        <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">How does it work?</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Frequently Asked Questions</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Deals.mu loyalty program</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Promote your Business on BTP</a></li>
+                    </ul>
+                </div>
+                <!-- ./footer__list -->
+                <div class="footer__social-network">
+                    <h3 class="footer__title footer__title--inline">Social Network</h3>
+                    <div class="footer__social-links">
+                        <a href="https://www.facebook.com" class="footer__link" target="_blank"><img src="img/footer/fb.svg" alt="Icon: facebook"></a>
+                        <a href="https://www.youtube.com/" class="footer__link" target="_blank"><img src="img/footer/yt.svg" alt="Icon: youtube"></a>
+                        <a href="https://www.instagram.com" class="footer__link" target="_blank"><img src="img/footer/inst.svg" alt="Icon: inst"></a>
+                    </div>
+                </div>
+                <!-- ./social-network -->
+                <div class="footer__list footer__legal">
+                    <h3 class="footer__title">LEGAL INFORMATION</h3>
+                    <ul class="footer__ul">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Terms & Conditions</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Disclaimer</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Cancellation policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ./footer__list -->
+                <div class="footer__contact-details">
+                    <h3 class="footer__title footer__title--mb-3
+                    ">Contact Details</h3>
+                    <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
+                    <ul class="footer__ul">
+                        <li class="footer__item footer__item--mb-2">
+                            <div class="footer__icon-wrapper">
+                                <img class="footer__icon" src="img/footer/map-pin.svg" alt="Icon: map">
+                            </div> 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+                        </li>
+                        <li class="footer__item footer__item--mb-2">
+                            <div class="footer__icon-wrapper">
+                                <img class="footer__icon" src="img/footer/phone.svg" alt="Icon: phone">
+                            </div>
+                            <div class="footer__text-block"><span class="footer__subtext">Tel (business hours) : <a href="tel:2691500" class="footer__number">269 1500</a></span>
+                                <span class="footer__subtext">Tel (hotline) Monday - Saturday: <wbr><a href="tel:52566138" class="footer__number"><nobr>52-56-61-38</nobr></a>  <nobr>(08:00 am – 20:00 pm)</nobr></span>
+                                <span class="footer__subtext">Tel (hotline) Sunday: <a href="tel:52566138" class="footer__number"><nobr>52-56-61-38</nobr></a> <nobr>(08:00 am – 14:00 pm)</nobr></span></div>
+
+                        </li>
+                        <li class="footer__item footer__item--mb-2">
+                            <div class="footer__icon-wrapper">
+                                <img class="footer__icon" src="img/footer/mail.svg" alt="Icon: mail">
+                            </div> <a href="mailto:cherly.lawson@example.com" class="footer__mail">cherly.lawson@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.footer__contact-details -->
+                <div class="footer__contact-form">
+                    <h3 class="footer__title footer__title--mb-4
+                    ">Send us a message</h3>
+                    <form action="send.php" method="post" class="footer__form">
+                        <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
+                        <input name="phone" type="text" class="input footer__input" placeholder="Phone Number*">
+                        <textarea name="message" placeholder="Message" class="footer__message"></textarea>
+                        <button type="submit" class="button footer__button ">Send</button>
+                        <span class="footer__info ">* Required Fields</span>
+                    </form>
+                </div>
+                <div class="footer-bottom footer__bottom">
+                    <div class="footer-bottom__wrapper">
+                        <ul class="footer__more">
+                            <li><a class="footer__more--links" href="#">Disclaimer</a>
+                            </li>
+                            <li><a class="footer__more--links" href="#">Conditions of use</a>
+                            </li>
+                            <li><a class="footer__more--links" href="#">Cancellation policy</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="footer__pay"><img src="img/footer/pay.png" alt="Icons: pay"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.footer-wrapper -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+    <script src="js/swiper-bundle.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
+    <script src="js/parallax.min.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>

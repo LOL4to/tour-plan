@@ -63,7 +63,7 @@
   .header
     &--mobile
       &--fixed
-        // position: fixed
+        position: fixed
         top: 0
         left: 0
         right: 0 
@@ -71,7 +71,7 @@
     &__navbar
       padding-top: 8px
       display: none
-      // position: fixed
+      position: fixed
       left: 0
       right: 0
       bottom: 0
@@ -307,6 +307,15 @@
         ////S
 //-------------- Section "reviews" --------------//
         ////S
+@media (min-width: 992px)
+  .reviews
+    &-slider
+      &__button
+        &:hover
+          transform: translateY(-50%)
+          &::before
+            background-color: transparent
+        ////S
 @media (max-width: 992px)
   .reviews
     padding-bottom: 60px
@@ -316,7 +325,7 @@
         ////S
 @media (max-width: 768px)
   .reviews
-    padding-bottom: 51px
+    padding-bottom: 60px
     &__title
       font-size: 30px
       line-height: 37px
@@ -359,7 +368,7 @@
         ////S
 @media (max-width: 480px)
   .reviews
-    padding-bottom: 40px
+    padding-bottom: 50px
     &-slider
       &__item
         padding: 0 32px 36px 30px
@@ -485,6 +494,11 @@
         ////S
 @media (max-width: 550px)
   .packages
+    &__title
+      text-align: left
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 23px
     &-list
       &__item
         position: relative
@@ -547,8 +561,8 @@
         align-self: center
         justify-self: center
     &__title
-      margin-top: 7px
-      margin-bottom: 18px
+      margin-top: 3px
+      margin-bottom: 16px
       &--inline
         margin: 0 42px 0 0
       &--mb-3
@@ -579,7 +593,7 @@
         grid-column: span 6
         grid-row: 4
     &__form
-      margin-bottom: 11px
+      margin-bottom: 7px
     &-bottom
       grid-column: 1/8
       grid-row: 5
@@ -645,17 +659,17 @@
       grid-gap: 18px 0
     &__title
       margin: 0
-      margin-bottom: 16px
-      margin-top: 9px
+      margin-bottom: 18px
+      margin-top: 8px
       &--inline
-        margin-bottom: 25px
-        margin-top: 20px
+        margin-bottom: 22px
+        margin-top: 17px
       &--mb-3
-        margin-top: 4px
-        margin-bottom: 24px
+        margin-top: 2px
+        margin-bottom: 25px
       &--mb-4
-        margin-top: 18px
-        margin-bottom: 16px
+        margin-top: 19px
+        margin-bottom: 15px
     &__input
       flex-basis: 100%
     &__logo

@@ -78,10 +78,17 @@ var menuButton = document.querySelector(".header-top__menu-button");
 menuButton.addEventListener('click', function() {
     console.log('Клик по кнопке меню');
     document.querySelector(".header__navbar").classList.toggle("header__navbar--visible");
-    document.querySelector("body").classList.toggle("body--visible");
+    document.body.classList.toggle("body--visible");
 
 });
-// var navbarVisible = document.getElementsByClassName("header__navbar--visible");
+document.querySelector('.navbar').addEventListener("click", ({ target, currentTarget }) => {
+    if (innerWidth > 767) return;
+    if (target.classList.contains('navbar__link')) {
+        currentTarget.classList.remove("header__navbar--visible");
+        document.body.classList.remove("body--visible");
+    }
+});
+// var navbarVisible = document.getElementsByClassName(".header__navbar--visible");
 
 // if ('navbarVisible') {
 //     document.body.style.overflow = 'hidden';

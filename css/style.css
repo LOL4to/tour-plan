@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: rgba(236, 31, 70, 0.3);
+  color: rgba(236, 31, 70, 0.8);
 }
 
 input {
@@ -706,9 +706,8 @@ template {
           transform: translateY(-50%);
 }
 
-.hotel-slider__button:hover {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+.hotel-slider__button:hover::before {
+  background-color: transparent;
 }
 
 .hotel-slider__button--next {
@@ -1295,11 +1294,6 @@ template {
   top: 46%;
 }
 
-.reviews-slider__button:hover {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
 .reviews-slider__button--next {
   right: 17px;
   background-image: url(../img/slider/arrow-next-secondary.svg);
@@ -1554,6 +1548,11 @@ template {
       align-self: center;
 }
 
+.footer__logo--image {
+  width: 100%;
+  height: 100%;
+}
+
 .footer__categories {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
@@ -1670,15 +1669,15 @@ template {
 }
 
 .footer__icon-wrapper {
-  min-width: 25px;
-  height: 24px;
+  min-width: 24px;
+  height: 25px;
   margin-right: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__text {
@@ -1709,7 +1708,7 @@ template {
 .footer__message {
   min-height: 123px;
   padding: 18px 23px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   background-color: #ffffff;
@@ -1891,6 +1890,7 @@ template {
     max-width: 87%;
   }
   .header--mobile--fixed {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -1899,6 +1899,7 @@ template {
   .header__navbar {
     padding-top: 8px;
     display: none;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
@@ -2224,6 +2225,16 @@ template {
   }
 }
 
+@media (min-width: 992px) {
+  .reviews-slider__button:hover {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .reviews-slider__button:hover::before {
+    background-color: transparent;
+  }
+}
+
 @media (max-width: 992px) {
   .reviews {
     padding-bottom: 60px;
@@ -2235,7 +2246,7 @@ template {
 
 @media (max-width: 768px) {
   .reviews {
-    padding-bottom: 51px;
+    padding-bottom: 60px;
   }
   .reviews__title {
     font-size: 30px;
@@ -2292,7 +2303,7 @@ template {
 
 @media (max-width: 480px) {
   .reviews {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
   .reviews-slider__item {
     padding: 0 32px 36px 30px;
@@ -2468,6 +2479,12 @@ template {
 }
 
 @media (max-width: 550px) {
+  .packages__title {
+    text-align: left;
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 23px;
+  }
   .packages-list__item {
     position: relative;
     z-index: -1;
@@ -2556,8 +2573,8 @@ template {
         justify-self: center;
   }
   .footer__title {
-    margin-top: 7px;
-    margin-bottom: 18px;
+    margin-top: 3px;
+    margin-bottom: 16px;
   }
   .footer__title--inline {
     margin: 0 42px 0 0;
@@ -2603,7 +2620,7 @@ template {
     grid-row: 4;
   }
   .footer__form {
-    margin-bottom: 11px;
+    margin-bottom: 7px;
   }
   .footer-bottom {
     -ms-grid-column: 1;
@@ -2720,20 +2737,20 @@ template {
   }
   .footer__title {
     margin: 0;
-    margin-bottom: 16px;
-    margin-top: 9px;
+    margin-bottom: 18px;
+    margin-top: 8px;
   }
   .footer__title--inline {
-    margin-bottom: 25px;
-    margin-top: 20px;
+    margin-bottom: 22px;
+    margin-top: 17px;
   }
   .footer__title--mb-3 {
-    margin-top: 4px;
-    margin-bottom: 24px;
+    margin-top: 2px;
+    margin-bottom: 25px;
   }
   .footer__title--mb-4 {
-    margin-top: 18px;
-    margin-bottom: 16px;
+    margin-top: 19px;
+    margin-bottom: 15px;
   }
   .footer__input {
     -ms-flex-preferred-size: 100%;
