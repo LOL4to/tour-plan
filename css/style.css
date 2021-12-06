@@ -1902,9 +1902,11 @@ template {
   font-style: normal;
   font-weight: bold;
   color: #E0E0E0;
+  padding: 10px;
 }
 
 .modal__form {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2998,7 +3000,32 @@ template {
 
 @media (max-width: 550px) {
   .modal__dialog {
-    padding: 22px 66px;
+    width: 400px;
+    padding: 22px 22px;
+  }
+  .modal__form {
+    width: 75%;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal__dialog {
+    width: 400px;
+    padding: 22px 22px;
+  }
+  .modal__form {
+    width: 75%;
+  }
+}
+
+@media (max-width: 340px) {
+  .modal__dialog {
+    width: 315px;
+    padding: 10px 15px;
+  }
+  .modal__button {
+    min-width: 115px;
+    padding: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
