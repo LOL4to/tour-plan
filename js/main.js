@@ -50,8 +50,10 @@ $(document).ready(function() {
         });
     var modalButton = $("[data-toggle=modal]");
     var closeModalButton = $(".modal__close");
+    var closeModalButton_1 = $(".modal__overlay");
     modalButton.on("click", openModal);
     closeModalButton.on("click", closeModal);
+    closeModalButton_1.on("click", closeModal);
 
     function openModal() {
         console.log($(this).attr("data-href"));
@@ -74,12 +76,13 @@ $(document).ready(function() {
             console.log("key");
             var modalDialog = $(".modal__dialog");
             var modalOverlay = $(".modal__overlay");
-            modalOverlay.removeClass("modal__overlay--visible");
             modalDialog.removeClass("modal__dialog--visible");
+            modalOverlay.removeClass("modal__overlay--visible");
             document.getElementById("booking-modal");
         }
     });
 });
+
 // var navbarVisible = document.getElementsByClassName(".header__navbar--visible");
 
 // if ('navbarVisible') {
