@@ -59,6 +59,18 @@
     line-height: 18px
     color: $text-color
 .navbar
+  &__search
+    position: relative
+    margin-left: 108px
+    height: 40px
+    display: flex
+    border-radius: 6px
+    overflow: hidden
+  &__user
+    margin-left: auto
+    display: flex
+    align-items: center
+    text-decoration: none
   &__menu 
     font-weight: 700
     padding: 0
@@ -70,18 +82,14 @@
   &__item 
     list-style: none
     color: #ffffff
+    &--visible
+      display: none
   &__link 
     color: inherit
     text-transform: uppercase
     text-decoration: none
     font-size: 14px
     line-height: 18px
-  &-menu
-    &__item
-      &--visible
-        display: none
-.header
-  &-top
-    &__user, &__search
-      &--visible
-        display: none
+  &__user, &__search
+    &--visible
+      display: none

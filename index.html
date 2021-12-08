@@ -23,8 +23,10 @@
                 <a href="#" class="logo header-top__logo">
                     <img src="img/header-top/head-logo.svg" alt="Tour-logo" class="logo__img" />
                 </a>
-                <form action="#" class="search header-top__search header-top__search--hidden">
-                    <input type="text" class="input-search search__input" placeholder="Search Location" />
+                <form action="#" class="search header-top__search header-top__search--hidden form">
+                    <div class="search__input-group">
+                        <input type="text" class="input-search search__input" placeholder="Search Location" />
+                    </div>
                     <button class="button-search search__button">
 							<img src="img/header-top/head-search.svg" alt="Header search" />
 						</button>
@@ -45,22 +47,23 @@
         <nav class="navbar header__navbar">
             <div class="container navbar__container">
                 <ul class="navbar__menu">
-                    <li class="navbar__item navbar-menu__item--visible">
-                        <a href="#" class="user header-top__user header-top__user--visible">
+                    <li class="navbar__item navbar__item--visible">
+                        <a href="#" class="user navbar__user navbar__user--visible">
                             <img src="img/header-top/head-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
                             <span class="user-name user__user-name user__user-name--light">Nathan</span
 								>
 							</a>
 						</li>
-						<li class="navbar__item navbar-menu__item--visible">
+						<li class="navbar__item navbar__item--visible">
 							<form
 								action="#"
-								class="search header-top__search header-top__search--visible"
+								class="search navbar__search navbar__search--visible form"
 							>
 								<input
 									type="text"
 									class="input-search search__input"
 									placeholder="Search Location"
+									required
 								/>
 								<button class="button-search search__button">
 									<img
@@ -407,10 +410,13 @@
                             subscribe to our
                             <span class="newsletter-title__strong">Newsletter</span>
                         </h2>
-                        <form action="send.php" method="post" class="subscribe newsletter__subscribe">
-                            <input name="email" type="email" class="input-subscribe subscribe__input" placeholder="Your email address" />
-                            <button class="button-subscribe subscribe__button">Send</button>
-                        </form>
+                        <div class="subscribe-group">
+                            <form action="send.php" method="post" class="subscribe newsletter__subscribe form">
+                                <input name="email" type="email" class="input-subscribe subscribe__input" placeholder="Your email address" required />
+                                <button class="button-subscribe subscribe__button">Send</button>
+                            </form>
+                            <div class="subscribe__error" required></div>
+                        </div>
                     </div>
                 </div>
                 <div class="newsletter-parallax"></div>
@@ -595,7 +601,7 @@ quest" class="card__image" />
             <footer class="footer">
                 <div class="container">
                     <div class="footer-wrapper">
-                        <a href="#" class="logo footer__logo"><img src="img/footer/vert-logo.svg" class="logo footer__logo--image" alt="Logo: Tour Plan-vert" /></a>
+                        <a href="#" class="logo footer__logo"><img src="img/footer/vert-logo.svg" class="logo footer__logo-image" alt="Logo: Tour Plan-vert" /></a>
                         <div class="footer__list footer__categories">
                             <h3 class="footer__title footer__title--categ-mb">
                                 ALL CATEGORIES
@@ -704,36 +710,27 @@ quest" class="card__image" />
                                 <div class="footer__text-block">
                                     <span class="footer__subtext">Tel (business hours) :
 										<a href="tel:2691500" class="footer__number"
-											>269 1500</a
-										></span
-									>
-									<span class="footer__subtext"
-										>Tel (hotline) Monday - Saturday: <wbr /><a
-											href="tel:52566138"
-											class="footer__number"
-											><nobr>52-56-61-38</nobr></a
-										>
-										<nobr>(08:00 am – 20:00 pm)</nobr></span
-									>
-									<span class="footer__subtext"
-										>Tel (hotline) Sunday:
-										<a href="tel:52566138" class="footer__number"
-											><nobr>52-56-61-38</nobr></a
-										>
-										<nobr>(08:00 am – 14:00 pm)</nobr></span
-									>
-								</div>
-							</li>
-							<li class="footer__item footer__item--mb-2">
-								<div class="footer__icon-wrapper">
-									<img
-										class="footer__icon"
-										src="img/footer/mail.svg"
-										alt="Icon: mail"
-									/>
-								</div>
-								<a href="mailto:cherly.lawson@example.com" class="footer__mail"
-									>cherly.lawson@example.com</a
+											><span class="footer__nowrap">269 1500</span></a>
+                                    </span>
+                                    <span class="footer__subtext">Tel (hotline) Monday - Saturday: <wbr />
+										<a href="tel:52566138" class="footer__number">
+											<span class="footer__nowrap">52-56-61-38</span>
+                                    </a>
+                                    <span class="footer__nowrap">(08:00 am – 20:00 pm)</span>
+                                    </span>
+                                    <span class="footer__subtext">Tel (hotline) Sunday:
+										<a href="tel:52566138" class="footer__number">
+											<span class="footer__nowrap">52-56-61-38</span>
+                                    </a>
+                                    <span class="footer__nowrap">(08:00 am – 14:00 pm></span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="footer__item footer__item--mb-2">
+                                <div class="footer__icon-wrapper">
+                                    <img class="footer__icon" src="img/footer/mail.svg" alt="Icon: mail" />
+                                </div>
+                                <a href="mailto:cherly.lawson@example.com" class="footer__mail">cherly.lawson@example.com</a
 								>
 							</li>
 						</ul>
@@ -741,47 +738,54 @@ quest" class="card__image" />
 					<!-- /.footer__contact-details -->
 					<div class="footer__contact-form">
 						<h3 class="footer__title footer__title--mb-4">Send us a message</h3>
-						<form action="send.php" method="post" class="footer__form">
-							<input
-								name="name"
-								type="text"
-								class="input footer__input"
-								placeholder="Your Full Name*"
-							/>
-							<input
-								name="phone"
-								type="tel"
-								class="input footer__input"
-								placeholder="Phone Number*"
-							/>
-							<textarea
-								name="message"
-								placeholder="Message"
-								class="footer__message"
-							></textarea>
+						<form action="send.php" method="post" class="footer__form form">
+							<div class="footer__input-group">
+								<input
+									name="name"
+									type="text"
+									class="input footer__input"
+									placeholder="Your Full Name*"
+									minlength="2"
+									required
+								/>
+							</div>
+							<div class="footer__input-group">
+								<input
+									name="phone"
+									type="tel"
+									class="input footer__input"
+									placeholder="Phone Number*"
+									required
+								/>
+							</div>
+							<div class="footer__message-group">
+								<textarea
+									name="message"
+									placeholder="Message"
+									class="footer__message"
+									required
+								></textarea>
+							</div>
 							<button type="submit" class="button footer__button">Send</button>
 							<span class="footer__info">* Required Fields</span>
-                                    </form>
-                                </div>
-                                <div class="footer-bottom footer__bottom">
-                                    <div class="footer-bottom__wrapper">
-                                        <ul class="footer__more">
-                                            <li><a class="footer__more--links" href="#">Disclaimer</a></li>
-                                            <li>
-                                                <a class="footer__more--links" href="#">Conditions of use</a>
-                                            </li>
-                                            <li>
-                                                <a class="footer__more--links" href="#">Cancellation policy</a
-									>
-								</li>
-							</ul>
-							<a href="#" class="footer__pay"
-								><img src="img/footer/pay.png" alt="Icons: pay"
-							/></a>
-                                    </div>
-                                </div>
+						</form>
+					</div>
+					<div class="footer-bottom footer__bottom">
+						<div class="footer-bottom__wrapper">
+							<ul class="footer__more">
+								<li><a class="footer__more-links" href="#">Disclaimer</a></li>
+                            <li>
+                                <a class="footer__more-links" href="#">Conditions of use</a>
+                            </li>
+                            <li>
+                                <a class="footer__more-links" href="#">Cancellation policy</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="footer__pay"><img src="img/footer/pay.png" alt="Icons: pay" /></a>
                     </div>
-                    <!-- /.footer-wrapper -->
+                </div>
+                </div>
+                <!-- /.footer-wrapper -->
                 </div>
                 <!-- /.container -->
             </footer>
@@ -789,16 +793,24 @@ quest" class="card__image" />
             <div class="modal" id="modal">
                 <div class="modal__overlay"></div>
                 <div class="modal__dialog">
+                    <a href="#" class="modal__close">
+                        <img src="img/close.svg" alt="Icon: close" />
+                    </a>
                     <div class="modal__scroll">
-                        <a href="#" class="modal__close">
-                            <img src="img/close.svg" alt="Icon: close" />
-                        </a>
                         <h3 class="modal__title">Booking</h3>
-                        <form action="send.php" method="post" class="modal__form">
-                            <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*" />
-                            <input name="phone" type="text" class="input modal__input" placeholder="Phone Number*" />
-                            <input name="email" type="email" class="input modal__input" placeholder="Email*" />
-                            <textarea name="message" placeholder="Message" class="modal__message"></textarea>
+                        <form action="send.php" method="post" class="modal__form form">
+                            <div class="modal__input-group">
+                                <input name="name" minlength="2" type="text" class="input modal__input" placeholder="Your Full Name*" required />
+                            </div>
+                            <div class="modal__input-group">
+                                <input name="phone" type="tel" class="input modal__input" placeholder="Phone Number*" required />
+                            </div>
+                            <div class="modal__input-group">
+                                <input name="email" type="email" class="input modal__input" placeholder="Email*" required />
+                            </div>
+                            <div class="modal__message-group">
+                                <textarea name="message" placeholder="Message" class="modal__message" required></textarea>
+                            </div>
                             <button type="submit" class="button modal__button">Send</button>
                             <span class="modal__info">* Required Fields</span>
                         </form>
@@ -808,7 +820,9 @@ quest" class="card__image" />
             <script src="js/swiper-bundle.min.js "></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
             <script src="js/jquery-3.6.0.min.js"></script>
+            <script src="js/jquery.validate.min.js"></script>
             <script src="js/parallax.min.js "></script>
+            <script src="js/jquery.mask.min.js"></script>
             <script src="js/main.js "></script>
 </body>
 

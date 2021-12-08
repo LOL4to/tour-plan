@@ -26,7 +26,7 @@ $(document).ready(function() {
         },
     });
     /**/
-    // ------------------------------- Параллакс на jquery
+    // ------------------------------- Параллакс на jquery-------------------------------
     $(".newsletter-parallax").parallax({
         imageSrc: "img/newsletter/newsletter-bg.jpeg",
         speed: 0.2,
@@ -80,6 +80,43 @@ $(document).ready(function() {
             modalOverlay.removeClass("modal__overlay--visible");
             document.getElementById("booking-modal");
         }
+    });
+
+    //Обработка форм
+    $(".subscribe").validate({
+        errorClass: "invalid",
+        errorLabelContainer: ".subscribe__error",
+        messages: {
+            email: {
+                required: "We need your email address to contact you",
+                email: "Email must be in the format of name@domain.com",
+            },
+        },
+    });
+    $(".form").each(function() {
+        $(this).validate({
+            errorClass: "invalid",
+            messages: {
+                name: {
+                    required: "Enter a name",
+                    minlength: "2 characters minimum",
+                },
+                email: {
+                    required: "We need your email address to contact you",
+                    email: "Email must be in the format of name@domain.com",
+                },
+                phone: {
+                    required: "Phone is required",
+                },
+            },
+        });
+    });
+
+    var phone = $('input[name="phone"]');
+    $(phone).mask("+7(999) 999-99-99", {
+        completed: function() {
+            alert("Вы ввели номер телефона: " + this.val());
+        },
     });
 });
 

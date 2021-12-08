@@ -84,12 +84,6 @@
     &__search, &__user
       &--hidden
         display: none
-      &--visible
-        display: flex
-        margin-bottom: 10px
-    &__search
-      &--visible
-        margin-bottom: 15px
     &__user
       flex-direction: column
       justify-content: center
@@ -106,6 +100,14 @@
       border: none
       background-color: #ffffff
       cursor: pointer
+  .navbar
+    &__search, &__user
+      &--visible
+        display: flex
+        margin-bottom: 10px
+      &__search
+        &--visible
+          margin-bottom: 15px
   .menu-button
     &__line
       width: 16px
@@ -119,10 +121,8 @@
       &--visible
     &__item
       margin-bottom: 17px
-    &-menu
-      &__item
-        &--visible
-          display: block
+      &--visible
+        display: block
   .user
     &__user-name
       &--light
@@ -299,11 +299,12 @@
   .newsletter
     &-row
       width: 88%
-    &__input
-      padding-left: 20px
     &__subscribe
       width: 100%
       margin-left: 0
+  .subscribe
+    &__input
+      padding-left: 20px
         ////S
 //-------------- Section "reviews" --------------//
         ////S
@@ -538,7 +539,8 @@
 @media (max-width: 1200px)
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
         ////S
 @media (max-width: 1024px)
   .footer
@@ -547,7 +549,8 @@
       grid-template-columns: repeat(7,1fr)
       grid-gap: 42px 0
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
     &__logo
       width: 96px
       grid-row: 1/2
@@ -600,7 +603,9 @@
       &__wrapper
         width: 100%
     &__bottom
-      margin-top: 0
+      margin-top: 4px
+    &__message-group
+      margin-bottom: 19px
         ////S
 @media (max-width: 760px)
   .footer
@@ -671,7 +676,8 @@
         margin-top: 19px
         margin-bottom: 15px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__logo
       grid-row: 1
       grid-column: 1
@@ -696,7 +702,7 @@
       grid-row: 5
       grid-column: 1
     &__text
-      margin-bottom: 1.3em
+      margin-bottom: 1.4em
     &__contact
       &-details 
         grid-row: 6
@@ -705,10 +711,11 @@
         grid-row: 7
         grid-column: 1
     &__form
-      margin-bottom: 7px
+      margin-bottom: 5px
     &__message
-      min-width: 100%
-      margin-bottom: 15px
+      &-group
+        min-width: 100%
+        margin-bottom: 11px
     &-bottom
       grid-column: 1
       grid-row: 8
@@ -747,10 +754,11 @@
     &__more
       flex-direction: column
         ////S
+//-------------- Modal window --------------//
 @media (max-width: 550px)
   .modal
     &__dialog
-      width: 400px
+      width: 90%
       padding: 22px 22px
     &__form
       width: 75%
@@ -758,13 +766,27 @@
 @media (max-width: 430px)
   .modal
     &__dialog
-      width: 315px
       padding: 10px 15px
     &__button
       min-width: 115px
       padding: 15px
         ////S
-@media (max-height: 490px)
+@media (max-height: 550px)
   .modal
-    &__dialog
+    &__scroll
       overflow-y: auto
+      scrollbar-color: #ec1f446e $text-color
+      scrollbar-width: thin
+      &::-webkit-scrollbar
+        width: 10px
+        background: $text-color
+      &::-webkit-scrollbar-thumb
+        border-right: 3px solid #ec1f446e
+    &__dialog 
+      height: 90%
+    &__input
+      height: 45px
+    &__message
+      min-height: 90px
+
+        ////S
