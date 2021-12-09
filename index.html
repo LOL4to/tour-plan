@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -145,7 +146,7 @@
             <!-- /.hotel-row__rating -->
             </div>
             <div class="hotel-grid">
-                <div class="swiper hotel-slider hotel__slider">
+                <div class="swiper hotel-slider hotel__slider" data-aos="fade-up-right">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -172,7 +173,7 @@
                 </div>
                 <!-- /.slider -->
                 <div class="hotel__column">
-                    <div class="booking">
+                    <div class="booking" data-aos="fade-down-left">
                         <div class="booking__info">
                             <div class="booking__price">
                                 <span class="booking__start">price starts as</span>
@@ -209,7 +210,7 @@
                         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6e46e646cf4500ad02d0f72770d688d11c5f205a1dc31baacf38d5ada6ca2e85&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
                     </div> -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1768.6785095322286!2d-122.42321404637555!3d37.8268917446332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085811569574f23%3A0x189c28e85a71ae17!2z0JDQu9GM0LrQsNGC0YDQsNGB!5e0!3m2!1sru!2sru!4v1638191990106!5m2!1sru!2sru"
-                        class="api-map" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                        class="api-map" data-aos="fade-up-left" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
                     <!-- /.map -->
                 </div>
                 <!-- /.hotel-column -->
@@ -224,12 +225,16 @@
                     <h2 class="packages__title">Other Packages</h2>
                     <ul class="packages-list packages__list">
                         <li class="packages-list__item packages-list__item--first">
-                            <div class="packages-list__block-img packages-list__block-img--first">
+                            <div class="packages-list__block-img packages-list__block-img--first" data-aos="fade-down-right" data-aos-duration="1500">
                                 <img src="img/packages/packages-01.jpg" alt="Icon: packages-01" class="packages-list__img" />
                                 <span class="packages-list__offer packages-list__offer--first">Flash Offer</span
 							>
 						</div>
-						<div class="packages-list__block packages-list__block--first">
+						<div
+							class="packages-list__block packages-list__block--first"
+							data-aos="fade-down"
+							data-aos-duration="1500"
+						>
 							<div class="packages-list__info">
 								<div class="packages-list__rating">
 									<img src="img/Star.svg" alt="star" />
@@ -274,7 +279,7 @@
                 </div>
                 </div>
                 </li>
-                <li class="packages-list__item">
+                <li class="packages-list__item" data-aos="fade-down-left" data-aos-duration="1000">
                     <div class="packages-block packages-list__block-img">
                         <img src="img/packages/packages-02.jpg" alt="Icon: packages-02" class="packages-list__img" />
                         <span class="packages-list__offer">Flash Offer</span>
@@ -305,7 +310,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="packages-list__item">
+                <li class="packages-list__item" data-aos="fade-right" data-aos-duration="500" data-aos-delay="0.5s">
                     <div class="packages-block packages-list__block-img">
                         <img src="img/packages/packages-03.jpg" alt="Icon: packages-03" class="packages-list__img" />
                         <span class="packages-list__offer">Flash Offer</span>
@@ -337,7 +342,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="packages-list__item">
+                <li class="packages-list__item" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="1.0s">
                     <div class="packages-block packages-list__block-img">
                         <img src="img/packages/packages-04.jpg" alt="Icon: packages-04" class="packages-list__img" />
                         <span class="packages-list__offer">Flash Offer</span>
@@ -368,7 +373,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="packages-list__item">
+                <li class="packages-list__item" data-aos="fade-up-left" data-aos-duration="500" data-aos-delay="1.5s">
                     <div class="packages-block packages-list__block-img">
                         <img src="img/packages/packages-05.jpg" alt="Icon: packages-05" class="packages-list__img" />
                         <span class="packages-list__offer">Flash Offer</span>
@@ -415,7 +420,7 @@
                                 <input name="email" type="email" class="input-subscribe subscribe__input" placeholder="Your email address" required />
                                 <button class="button-subscribe subscribe__button">Send</button>
                             </form>
-                            <div class="subscribe__error" required></div>
+                            <div class="subscribe-error"></div>
                         </div>
                     </div>
                 </div>
@@ -553,7 +558,8 @@
                 <div class="container">
                     <h2 class="activities__title">Other Activities</h2>
                     <div class="activities-wrapper">
-                        <div class="card activities__card">
+                        <div class="card activities__card" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="0">
+                            >
                             <img src="img/activities/activities-01.jpg" alt="The curious corner 
 of chamarel" class="card__image" />
                             <h3 class="card__title">The curious corner <br />of chamarel</h3>
@@ -562,7 +568,7 @@ of chamarel" class="card__image" />
 						</button>
                         </div>
                         <!-- ./card 1-->
-                        <div class="card activities__card">
+                        <div class="card activities__card" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
                             <img src="img/activities/activities-02.jpg" alt="Gymkhana club golf
 course" class="card__image" />
                             <h3 class="card__title">Gymkhana club golf course</h3>
@@ -571,7 +577,7 @@ course" class="card__image" />
 						</button>
                         </div>
                         <!-- ./card 2-->
-                        <div class="card activities__card">
+                        <div class="card activities__card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="0">
                             <img src="img/activities/activities-03.jpg" alt="Tamarind falls hiking
 trip - full day
 
@@ -584,7 +590,7 @@ trip - full day
 						</button>
                         </div>
                         <!-- ./card 3-->
-                        <div class="card activities__card">
+                        <div class="card activities__card" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="0">
                             <img src="img/activities/activities-04.jpg" alt="The blue marine discovery
 quest" class="card__image" />
                             <h3 class="card__title">The blue marine discovery quest</h3>
@@ -752,6 +758,7 @@ quest" class="card__image" />
 							<div class="footer__input-group">
 								<input
 									name="phone"
+									minlength="17"
 									type="tel"
 									class="input footer__input"
 									placeholder="Phone Number*"
@@ -803,7 +810,7 @@ quest" class="card__image" />
                                 <input name="name" minlength="2" type="text" class="input modal__input" placeholder="Your Full Name*" required />
                             </div>
                             <div class="modal__input-group">
-                                <input name="phone" type="tel" class="input modal__input" placeholder="Phone Number*" required />
+                                <input name="phone" type="tel" minlength="17" class="input modal__input" placeholder="Phone Number*" required />
                             </div>
                             <div class="modal__input-group">
                                 <input name="email" type="email" class="input modal__input" placeholder="Email*" required />
@@ -823,6 +830,7 @@ quest" class="card__image" />
             <script src="js/jquery.validate.min.js"></script>
             <script src="js/parallax.min.js "></script>
             <script src="js/jquery.mask.min.js"></script>
+            <script src="js/aos.js"></script>
             <script src="js/main.js "></script>
 </body>
 

@@ -1,3 +1,4 @@
+AOS.init();
 $(document).ready(function() {
     // ------------------------------- Слайдеры  -------------------------------
     var hotelSlider = new Swiper(".hotel-slider", {
@@ -85,7 +86,7 @@ $(document).ready(function() {
     //Обработка форм
     $(".subscribe").validate({
         errorClass: "invalid",
-        errorLabelContainer: ".subscribe__error",
+        errorLabelContainer: ".subscribe-error",
         messages: {
             email: {
                 required: "We need your email address to contact you",
@@ -107,10 +108,15 @@ $(document).ready(function() {
                 },
                 phone: {
                     required: "Phone is required",
+                    minlength: "Enter the full number",
                 },
             },
         });
     });
+    // $(".invalid").addClass("animate__shakeX");
+
+    // var animate = $(".invalid");
+    // $(animate).addClass("animate__shakeX");
 
     var phone = $('input[name="phone"]');
     $(phone).mask("+7(999) 999-99-99", {

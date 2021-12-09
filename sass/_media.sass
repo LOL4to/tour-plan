@@ -758,18 +758,30 @@
 @media (max-width: 550px)
   .modal
     &__dialog
-      width: 90%
-      padding: 22px 22px
-    &__form
-      width: 75%
+      padding: 33px 55px
+    &__scroll
         ////S
 @media (max-width: 430px)
   .modal
-    &__dialog
-      padding: 10px 15px
+    &__scroll
+      overflow-x: auto
+      scrollbar-color: #ec1f446e $text-color
+      scrollbar-width: thin
+      &::-webkit-scrollbar
+        width: 10px
+        background: $text-color
+      &::-webkit-scrollbar-thumb
+        border-right: 3px solid #ec1f446e
     &__button
-      min-width: 115px
+      width: 100%
+      margin-bottom: 20px
       padding: 15px
+      order: 1
+    &__info
+      margin-top: 15px
+      padding: 0
+    &__form
+      width: 303px
         ////S
 @media (max-height: 550px)
   .modal
